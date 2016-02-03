@@ -1,0 +1,27 @@
+{
+	"name": "haml",
+	"displayName": "Ruby Haml Colorization",
+	"description": "Adds support for Ruby Haml colorization to Visual Studio Code",
+	"version": "0.0.1",
+	"publisher": "groksrc",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+    "icon": "images/haml.png",
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "haml",
+			"aliases": ["Ruby Haml", "haml"],
+			"extensions": [".haml",".sass"],
+			"configuration": "./haml.configuration.json"
+		}],
+		"grammars": [{
+			"language": "haml",
+			"scopeName": "text.haml",
+			"path": "./syntaxes/haml.tmLanguage"
+		}]
+	}
+}
